@@ -14,6 +14,7 @@ gem 'redis', '~> 4.0'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'ridgepole'
+gem 'active_model_serializers', '~> 0.10.0'
 
 # .env
 gem 'dotenv-rails'
