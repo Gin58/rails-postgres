@@ -31,7 +31,11 @@ gem 'carrierwave', '~> 1.0'
 gem 'faker'
 gem 'enum_help'
 
+gem 'bcrypt'
+gem 'rack-cors'
+
 group :development, :test do
+  gem 'pry-rails'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'factory_bot_rails'
   gem 'rspec_junit_formatter', require: false
@@ -53,7 +57,7 @@ end
 
 group :test do
   gem 'capybara', '>= 2.15'
-  gem 'rspec-rails', '~> 3.8.0'
+  gem 'rspec-rails', '3.8.0'
   gem 'selenium-webdriver'
   gem 'webdrivers', '~> 3.0'
   gem 'database_cleaner'
